@@ -1,0 +1,47 @@
+Agenda -: 
+-> What end to end data science work look like ?
+Steps-:
+1) Data Collection (lets say some data coming from dbms,xlsx file etc) {Raw Data}
+2) Data Cleaning {issues with row data -> Mising some colomns some data , duplicate data , formatting}
+3) EDA (Exploratory data analysis) {Type - Release date , director,cast,revenue,budget,genre  -> So to see what type of movies is actually doing great}
+4) Building ML MOdel (will treat it as a Black Box for now)
+All of these steps are carried out in a Jupyter Notebook
+
+Today we will make a service/tool that can help us package our data science work
+
+( Python libraries are #rs party code packages )
+if we want to pivot data i.e row becomes col and vice versa
+
+Pandas library is required for data scienctist
+It is an open source library
+
+Streamlit library -: dashboard isse bnaenge (allows us to create without html and CSS)
+
+then start application app.py and try to print the title 
+
+Display data -> coming from yfinance -> stock price data
+
+-> Where does Streamlit comes into picture ?
+
+-> What is Streamlit , How to use this tool to build interactive dashboard
+
+-> How to package your Machine Learning MOdel into a link which everyone can interact with without any frontend knowledge
+
+
+--> Stock Price Analyser 
+    In Streamlit-:
+    st.write("#")
+    (# means heading 1)
+
+    Command to run -: streamlit run app.py
+
+    We pull in stock price data using yfinance (another library) -> pip install yfinance
+    ticker is basically a symbol -: 1st day , 2nd day , etc...
+
+
+For deploying to streamlit community cloud -:
+    First create git hub repository
+    then click on New app
+    then fill info and deploy
+
+Github repo - https://github.com/dswh/mc_streamlit
